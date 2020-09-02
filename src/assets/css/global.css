@@ -3,7 +3,7 @@ html, body, #app {
     height: 100%;
     margin: 0;
     padding: 0;
-    min-width: 876px;
+    min-width: 921px;
 }
 
 .el-breadcrumb {
@@ -19,4 +19,10 @@ html, body, #app {
 }
 .el-pagination {
     margin-top: 20px;
+}
+.el-cascader {
+    width: 100%;
+}
+.el-cascader-menu {
+    height: 300px;
 }
