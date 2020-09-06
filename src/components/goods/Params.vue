@@ -181,7 +181,7 @@ export default {
       // 获取在扩展列中展示的数据
       // 将返回的attr_vals字符串转化为数组形式
       res.data.forEach(item => {
-        item.attr_vals = item.attr_vals ? item.attr_vals = item.attr_vals.split(' ') : []
+        item.attr_vals = item.attr_vals ? item.attr_vals = item.attr_vals.split(',') : []
         // 控住文本框的显示与隐藏
         item.inputVisible = false
         // 文本框中输入的值
