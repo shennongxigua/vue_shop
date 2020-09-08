@@ -140,11 +140,10 @@ export default {
     },
     // 监听查看物流信息按钮
     async showProgressBox() {
+      this.progressVisible = true
       const { data: res } = await this.$http.get('/kuaidi/804909574412544580')
       if (res.meta.status !== 200) return this.$message.error('物流信息查询失败!')
       this.progressInfo = res.data
-      this.progressVisible = true
-      console.log(this.progressInfo)
     }
   }
 }
